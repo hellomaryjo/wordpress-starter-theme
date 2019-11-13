@@ -1,0 +1,18 @@
+/* Bootstrap config
+ * Description: Use this file to include a custom configuration
+ * of Bootstrap sass modules. Please note that the functions,
+ * variables and mixins files are required. 
+ * More info: https://getbootstrap.com/docs/4.3/getting-started/theming/
+*/
+
+// Required
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Optional
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/code';
+@import '~bootstrap/scss/grid';

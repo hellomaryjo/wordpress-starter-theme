@@ -1,10 +1,10 @@
-# Sonar House Studios Website
+# Wordpress Starter Theme
 
-This is the custom child theme repo used for the Sonar House Studios website. The parent theme is using [GeneratePress](https://generatepress.com/) and should have the [GeneratePress Premium plugin](https://generatepress.com/premium/) enabled. 
+This is a custom wordpress starter theme built with [_s](https://github.com/automattic/_s) and utilizing the [Webpack](https://webpack.js.org/) build system
 
 ## Getting started
 
-The build process is using Webpack 4. You can find some helpful tips on configuring in the links at the bottom of this README. 
+The build process uses Webpack 4.
 
 1. After cloning this repo you can run `npm install` to install all the necessary dependencies.
 
@@ -18,9 +18,15 @@ npm run dev
 npm run build
 ```
 
+4. To compile for production and watch run this command:
+```
+npm run start
+```
+
 4. That should be everything to get you started! Here are some helpful links:
 
 - https://webpack.js.org/
 - https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1
 - https://github.com/cssnano/cssnano
 - https://github.com/postcss/postcss
+- https://www.npmjs.com/package/browser-sync-webpack-plugin

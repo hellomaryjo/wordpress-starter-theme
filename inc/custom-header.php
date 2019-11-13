@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package starter-theme
+ * @package wordpress-starter-theme
  */
 
 /**
