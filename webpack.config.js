@@ -7,7 +7,10 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: { main: './src/index.js', customizer: './src/customizer.js' },
+  entry: { 
+    main: './src/index.js', 
+    customizer: './src/customizer.js',
+    editor: './src/editor.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
@@ -49,7 +52,7 @@ module.exports = {
     }),
     new BrowserSyncPlugin({
       files: '**/*.php',
-      proxy: 'http://localhost/wordpress-starter-theme/'
+      proxy: 'http://localhost/smile-network/'
     })
   ]
 };

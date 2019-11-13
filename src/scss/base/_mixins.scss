@@ -1,0 +1,19 @@
+@each $color, $hex in $brand-colors {
+  .bg-#{$color} {
+    background-color: #{$hex};
+  }
+  .has-#{$color}-background-color {
+    background-color: #{$hex};
+  }
+  .has-#{$color}-color {
+    color: #{$hex};
+  }
+  .#{$color}-text {
+    color: #{$hex};
+  }
+}
+
+@function get-color($val) {
+  $color: map-get($brand-colors, $val);
+  @return $color;
+}

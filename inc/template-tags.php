@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package wordpress-starter-theme
+ * @package smile-network
  */
 
 if ( ! function_exists( 'starter_theme_posted_on' ) ) :
@@ -26,7 +26,7 @@ if ( ! function_exists( 'starter_theme_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'wordpress-starter-theme' ),
+			esc_html_x( 'Posted on %s', 'post date', 'smile-network' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -42,7 +42,7 @@ if ( ! function_exists( 'starter_theme_posted_by' ) ) :
 	function starter_theme_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'wordpress-starter-theme' ),
+			esc_html_x( 'by %s', 'post author', 'smile-network' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -59,17 +59,17 @@ if ( ! function_exists( 'starter_theme_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'wordpress-starter-theme' ) );
+			$categories_list = get_the_category_list( esc_html__( ', ', 'smile-network' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wordpress-starter-theme' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'smile-network' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'wordpress-starter-theme' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'smile-network' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'wordpress-starter-theme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'smile-network' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -79,7 +79,7 @@ if ( ! function_exists( 'starter_theme_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'wordpress-starter-theme' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'smile-network' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -96,7 +96,7 @@ if ( ! function_exists( 'starter_theme_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'wordpress-starter-theme' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'smile-network' ),
 					array(
 						'span' => array(
 							'class' => array(),

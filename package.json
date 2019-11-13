@@ -1,7 +1,7 @@
 {
-  "name": "wordpress-theme-starter",
+  "name": "smile-network",
   "version": "1.0.0",
-  "description": "Wordpres Theme Starter",
+  "description": "Smile Network",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hellomaryjo/wordpress-starter-theme"
+    "url": "git+https://github.com/hellomaryjo/smile-network"
   },
   "author": "Adrian S. Haynes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hellomaryjo/wordpress-starter-theme/issues"
+    "url": "https://github.com/hellomaryjo/smile-network/issues"
   },
-  "homepage": "https://github.com/hellomaryjo/wordpress-starter-theme#readme",
+  "homepage": "https://github.com/hellomaryjo/smile-network#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "autoprefixer": "^9.5.1",
